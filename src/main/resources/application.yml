@@ -1,0 +1,63 @@
+#define app name
+spring.application.name: suntime
+
+# define access log directory
+server.tomcat.accesslog.directory:
+
+# define ANSI output
+#spring.output.ansi.enabled: ALWAYS
+
+# set async timeout (in millis)
+spring.mvc.async.request-timeout: 90000
+
+# enable swagger
+swagger.enabled: false
+
+#Disable management endpoints security
+management.security.enabled: false
+
+# Management port
+management.server.port: 8081
+
+# Enable actuator links
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      base-path: /
+      exposure:
+        include: '*'
+
+# spring boot admin
+spring.boot.admin:
+  url: http://${MONITORING_HOST:localhost:8889}
+  client:
+    enabled: ${MONITORING_ENABLED:true}
+
+# default port number of app server
+server.port: 8080
+server.address: 0.0.0.0
+---
+
+spring:
+# Hibernate Settings
+spring.hibernate:
+    dialect: org.hibernate.dialect.MySQL5Dialect
+    hbm2ddl.auto: update
+# Database Settings
+spring.datasource.dbcp2:
+  url: jdbc:mysql://localhost:3306/suntime?serverTimezone=UTC&useSSL=false
+  username: root
+  password: 19vovan83
+  max-active: 100
+  max-wait: 10000
+  max-age: 600000
+  max-idle: 20
+  min-idle: 8
+  initial-size: 10
+
+#jpa properties
+spring.jpa:
+   open-in-view: false
+
+---
