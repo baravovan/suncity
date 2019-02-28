@@ -11,7 +11,7 @@
     </parent>
 	
 	<properties>
-		<jackson.databind-version>2.9.4</jackson.databind-version>
+		<jackson.databind-version>2.9.8</jackson.databind-version>
 	</properties>
 	
     <dependencies>
@@ -88,7 +88,7 @@
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
-      </plugin>	 
+      </plugin>
     </plugins>
   </build>
 </project>
