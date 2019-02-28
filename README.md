@@ -35,4 +35,15 @@ Aplication is used to get information about cities time of sunrise/sunset accord
 ### Run 
 to Start from Eclipse IDE (or any other) run Application.class from main package as Java Application
 
+to use executable Jar:
+- using IDE or terminal make 
+```
+mvn clean install
+```
+- after that from target directory in terminal execute
+```
+java -jar sun_cities-0.0.1-SNAPSHOT.jar
+```
+It will start application. 
+
 SunCity is developed by [Volodymyr Baranov] 2019.
