@@ -20,6 +20,8 @@ Aplication is used to get information about cities time of sunrise/sunset accord
   - action=sunset | sunset | both
   - date=today | yyyy-mm-dd (example 2019-03-03)
   - city (example city=TestCity | city=test&city=test2)
+  
+  All APIs have the same type POST request method. 
 
 ### Prerequisites 
 - Maven
