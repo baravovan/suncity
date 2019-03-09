@@ -38,7 +38,7 @@ to Start from Eclipse IDE (or any other) run Application.class from main package
 to use executable Jar:
 - using IDE or terminal make 
 ```
-mvn clean install
+mvn clean install or mvn clean install -DskipTests=true
 ```
 - after that from target directory in terminal execute
 ```
